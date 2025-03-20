@@ -19,22 +19,21 @@ public class Main {
         if (option == 1) {
             System.out.println("El Promedio de edades es: " + calcularPromedio(edades));
 
-        }
-
-        if (option == 2) {
+        } else if (option == 2) {
             System.out.println(calcularModa(edades) != -1 ? "Moda: " + calcularModa(edades) : "No hay moda.");
 
         }
-        if (option == 3) {
+        else if (option == 3) {
             System.out.println("Desviación estándar: " + calcularDesviacion(edades));
 
 
         }
+        else {
+            System.out.println("Op No valida");
 
+        }
 
     }
-
-
 
 
     public static double calcularPromedio(int[] edades) {
